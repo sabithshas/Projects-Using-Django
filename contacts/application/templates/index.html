@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-dark ms-2 mt-1" style="width:99%;">
+            <div class="container-fluid">
+                <a class="navbar-brand text-secondary me-5" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-5">
+                        <li class="nav-item">
+                            <a class="nav-link text-danger" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger" href="#">Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger" href="#">Address</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- <div class="container text-center"> -->
+        <div class="row mt-5">
+            <div class="col-lg-6">
+                <form method="post" action="{% url 'adddata' %}">
+                  {% csrf_token %}
+                    <div class="mb-5">
+                        <label for="" class="form-label ms-3">NAME</label>
+                        <input type="text" class="form-control ms-2"style="width: 60%;" name="name" >
+                    </div>
+                    <div class="mb-5">
+                        <label for="" class="form-label ms-3">PHONE</label>
+                        <input type="text" class="form-control ms-2"style="width: 60%;" name="phone">
+                    </div>
+                    <div class="mb-5">
+                        <label for="" class="form-label ms-3">ADDRESS</label>
+                        <input type="text" class="form-control ms-2" style="width: 60%;" name="address">
+                    </div>
+                        <div class="mt-5 ms-3">
+                            <button type="submit" class="btn btn-primary" style="background-color: #d70f0f;">Submit</button>
+                        </div>
+                </form>
+            </div>
+
+            <div class="col-lg-6 mt-2 ms-2" style="width: 48%">
+                <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">SINO</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {% for i in data %}
+                      <tr>
+                        
+                        <th scope="row">{{forloop.counter}}</th>
+                        <td>{{i.name}}</td>
+                        <td>{{i.phone}}</td>
+                        <td>{{i.address}}</td>
+                        <td> <a href="{% url 'edit' i.id %}" class="btn btn-success">Edit</a>  &nbsp; &nbsp; <a href="{% url 'delete_data' i.id%}" class="btn btn-danger">Delete</a> </td>
+                        
+                      </tr>
+                      {% endfor %}
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+        <div class="container-fluid mt-5">
+
+            <footer class="text-center text-lg-start" style="background-color: #ef570b;">
+              <div class="container d-flex justify-content-center py-5">
+                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #32f159;">
+                  <!-- <i class="fab fa-facebook-f"></i> -->
+                </button>
+                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #32f159;">
+                  <!-- <i class="fab fa-youtube"></i> -->
+                </button>
+                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #32f159;">
+                  <!-- <i class="fab fa-instagram"></i> -->
+                </button>
+                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #32f159;">
+                  <!-- <i class="fab fa-twitter"></i> -->
+                </button>
+              </div>
+          
+              <!-- Copyright -->
+              <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                Your details
+                <!-- <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a> -->
+              </div>
+              <!-- Copyright -->
+            </footer>
+            
+          </div>
+    </div>
+</body>
+
+</html>
