@@ -1,0 +1,5 @@
+body,html{overflow-x: hidden;}
+#doctor{
+    display: flex;
+    justify-content: center;
+}

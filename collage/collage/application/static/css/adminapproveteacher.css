@@ -1,0 +1,10 @@
+body,html{overflow-x: hidden;}
+
+#ffff{
+    display: flex;
+    justify-content: center;
+}
+#ccrd{
+    height: 595px;
+    margin: 50px;
+}

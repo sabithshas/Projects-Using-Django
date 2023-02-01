@@ -1,0 +1,8 @@
+body,html{overflow-x: hidden;}
+#doctor{
+    display: flex;
+    justify-content: center;
+}
+#doctor{
+    /* height: 300px; */
+}

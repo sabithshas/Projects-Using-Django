@@ -1,0 +1,29 @@
+body,html{overflow-x: hidden;}
+body{
+    background-image: url(../images/booking2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    
+
+}
+#textbox{
+    width: 350px;
+    height: 40px;
+    border: solid black;
+    border-radius: 15px ;
+    background-color: rgb(193, 189, 184);
+    color: rgb(251, 251, 251);
+    
+}
+#label{
+    color: blueviolet;
+    font-size: 25px;
+    font-weight: 300p;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.btn{
+    width: 150px;
+    background-color: blueviolet;
+    color: black;
+}

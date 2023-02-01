@@ -1,0 +1,51 @@
+body,html{overflow-x: hidden;}
+#profesor{
+    display: flex;
+    justify-content: center;
+}
+#mg{
+    height: 400px;
+    width: 350px;
+}
+#rd{
+    height: 400px;
+    width: 350px; 
+    margin: 50px;
+    
+}
+#course{
+    display: flex;
+    justify-content: center; 
+}
+#vd{
+    height: 400px;
+    width: 350px; 
+    margin: 50px;
+    border: double yellow;
+    /* box-shadow: 15px 15px 20px rgb(232, 240, 197);  */
+}
+#zg{
+    height: 400px;
+    width: 350px; 
+}
+#vd:hover{
+    cursor: pointer;
+}
+#vd:hover{
+    box-shadow: 15px 15px 20px rgb(232, 240, 197); 
+}
+#stud1{
+    display: flex;
+    justify-content: center; 
+    margin: 150px;
+}
+#xd{
+    height: 400px;
+    width: 300px;
+    margin: 20px; 
+   
+}
+#kg{
+    height: 400px;
+    width: 300px;  
+}

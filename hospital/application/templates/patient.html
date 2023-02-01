@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../static/css/patient.css">
+</head>
+<body>
+    <div class="container-fluid-xl">
+
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12">
+                <nav class="navbar navbar-expand-lg bg-primary">
+                    <a class="navbar-brand ms-3" href="#">
+                        <img src="../static/images/logo.jpg" alt="Logo" width="70" height="50"
+                            class="d-inline-block align-text-top" class="mb-3">
+                        <span style="color: rgb(121, 185, 241);">HOSPITAL</span>
+                    </a>
+                    <div class="ms-auto me-5">
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="{% url 'patientprofile' %}">Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="{% url 'booking' %}">Booking</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="{% url 'prescriptionview' %}">Medicine</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="{% url 'leaveapprovedview' %}">Notification</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../static/images/ptc2.jpg" class="d-block w-100" style="height: 650px;" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <p>Caregiving often calls us to lean into love we didn't know possible..</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../static/images/ptc2.jpg" class="d-block w-100" style="height: 650px;" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <p>Caregiving often calls us to lean into love we didn't know possible..</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../static/images/pp.webp" class="d-block w-100" style="height: 650px;" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <p>Caregiving often calls us to lean into love we didn't know possible.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+
+        <div class="row mt-2" style="background-color: rgb(255, 255, 255);">
+            <div class="col-xl-12 col-lg-12 col-md-12">
+                <h1 class="text-center pt-3" style="color: rgb(155, 99, 99);">HOSPITAL DETAILS</h1>
+                <p class="text-center" style="color: rgb(169, 158, 125); font-size: 25px;">Hospitality is the act of kindness in welcoming and looking after the basic needs of customers. The hospitality industry is a broad group of businesses that provide services to customers. The industry can be broken down into three basic areas: accommodations, food and beverage, and travel and tourism. Hospitality is actually one facet of the service industry. It primarily involves addressing customer satisfaction and catering to the needs of guests.<br>
+                    Hospitality management is the study of the Hospitality Industry. Hospitality management provides a focus on the management of hospitality operations including hotels, restaurants, cruise ships, amusement parks, destination marketing organizations, convention centers, country clubs, and other related industries. As a field of work, Hospitality Management refers to the management of hotels, restaurants, resorts, and any other institutions that are involved in the hospitality industry. It also relates to the people who opt for the hospitality sector as a career and pursue their studies in the same.</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="row mt-3">
+            <div class="col-xl-12 col-lg-12 col-md-12 ">
+                <h1 class="text-center pt-3" style="color: rgb(208, 88, 88);">LIST OF DOCTORS</h1>
+            </div>
+            
+            <div class="col-xl-6 col-lg-6 col-md-6 mt-5" id="doctor">
+                <div class="card" style="width: 25rem;">
+                    <img src="../static/images/ff1.jpg" class="card-img-top" id="doctor" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">JOHN</h5>
+                      <p class="text-center">He was Specialised in <br>Anaesthology</p>
+                    </div>
+                </div>
+            </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 mt-5" id="doctor">
+                    <div class="card" style="width: 25rem;">
+                        <img src="../static/images/ff2.jpg" class="card-img-top" id="doctor" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">ROCK</h5>
+                          <p class="text-center">He was Specialised in <br>audiology and speech therapy</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 mt-5" id="doctor">
+                        <div class="card" style="width: 25rem;">
+                            <img src="../static/images/ff3.jpg" class="card-img-top" id="doctor" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">Nancy</h5>
+                              <p class="text-center">she was Specialised in <br>arthroscopy and sports injury</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 mt-5" id="doctor">
+                        <div class="card" style="width: 25rem;">
+                            <img src="../static/images/ff4.jpg" class="card-img-top" id="doctor" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">ROMIA</h5>
+                              <p class="text-center">She was Specialised in <br>critical care</p>
+                            </div>
+                        </div>
+                    </div>        
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-xl-12 col-lg-12 col-md-6">
+                <h1 class="text-center pt-3" style="color: rgb(56, 118, 3);">Time and health are two precious assets that we don't recognize and appreciate until they have been depleted</h1>
+            </div>
+        </div>
+
+
+        <div class="row mt-5">
+            <div class="col-xl-6 col-lg-6 col-md-6">
+                <img src="../static/images/hlt.webp" class="rounded mx-auto d-block mt-5" alt="...">
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6">
+                <h2 class="text-center pt-3" style="color: brown;">HEALTH</h2>
+                <p style="font-size: 30px;">As it applies to individuals, healthy living is the practice of health enhancing behaviours, or put simply, living in healthy ways. It implies the physical, mental and spiritual capacity to make healthy choices.</p>
+            </div>
+        </div>
+
+
+        <div class="row mt-3">
+            <div class="col-xl-12 col-lg-12 col-md-12">
+                <footer class=" text-center text-light-start text-light" style="background-color: rgba(49, 49, 175, 0.741);">
+
+                    <div class="container p-4">
+
+                        <div class="row mt-4">
+
+                        </div>
+
+                    </div>
+
+                    <div class="text-center p-3" style="background-color:rgba(72, 139, 233, 0.57)">
+                        © HOSPITAL
+
+                    </div>
+
+                </footer>
+            </div>
+
+    </div>
+</body>
+</html>

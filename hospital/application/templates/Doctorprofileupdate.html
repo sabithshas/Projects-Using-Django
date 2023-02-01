@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/doctorregister.css">
+</head>
+<body>
+    <div class="container">
+        <form method="post" action="{% url 'doctorupdateid' dat.id %}">
+            {% csrf_token %}
+            <h2>Registration</h2>
+            <div class="content">
+                <div class="input-box">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="fullname" value="{{dat.fullname}}">
+                </div>
+                <div class="input-box">
+                    <label for="username">User Name</label>
+                    <input type="text" name="username" value="{{dat.username}}">
+                </div>
+                <div class="input-box">
+                    <label for="Email">Email</label>
+                    <input type="text" name="email" value="{{dat.email}}">
+                </div>
+                <div class="input-box">
+                    <label for="specialized">Specialised</label>
+                    <input type="text" name="specialised" value="{{dat.specialised}}">
+                </div>
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" value="{{dat.password}}">
+                </div>
+                <div class="input-box">
+                    <label for="cpassword">ConfirmPassword</label>
+                    <input type="password" name="confirmpassword" value="{{dat.confirmpassword}}">
+                </div>
+                
+            </div>
+            <div class="alert">
+                <p>By clicking Sign up You Are agreeing Our Terms And Conditions</p>
+            </div>
+            <div class="button-container">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

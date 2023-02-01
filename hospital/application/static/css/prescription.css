@@ -1,0 +1,33 @@
+body,html{overflow-x: hidden;}
+#label{
+    width: 160px;
+    color: rgb(14, 13, 13);
+    font-weight: bold;
+    
+}
+#textbox{
+    width: 300px;
+    height: 35px;
+    border: solid rgba(165, 42, 42, 0.115);
+    border-radius: 6px;
+    color: rgb(0, 0, 0);
+    font-weight: 390;
+    background-color: rgba(250, 235, 215, 0.181);
+
+}
+#textbox1{
+    width: 300px;
+    height: 85px;
+    border: solid rgba(165, 42, 42, 0.186);
+    border-radius: 6px;
+    color: rgb(0, 0, 0);
+    font-weight: 390;
+    background-color: rgba(250, 235, 215, 0.181);
+}
+#button{
+    width: 300px;
+    height: 45px; 
+    background-color: rgb(149, 0, 0);
+    color: black;
+    font-weight: 600;
+}

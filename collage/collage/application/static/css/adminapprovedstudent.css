@@ -1,0 +1,10 @@
+body,html{overflow-x: hidden;}
+#rowws{
+    display: flex;
+    justify-content: center; 
+}
+#rd{
+    height: 595px;
+    margin: 50px;
+    background-image: url(../images/crrd2.jpg);
+}

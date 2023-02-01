@@ -1,0 +1,85 @@
+body,html{overflow-x: hidden;}
+#iii{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-weight: 200;
+}
+#iig{
+    height: 500px;
+    width: 350px;
+}
+#cont{
+    display: flex;
+    justify-content: center;
+
+}
+#cd{
+    height: 500px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+
+}
+#intro{
+    height: 200px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 405px; 
+    background: rgb(27, 27, 27,.5);
+    color: white;
+    transition: .5s;
+}
+#hh{
+    margin: 10px;
+    font-size: 40px;
+}
+#p{
+   font-size: 20px;
+   margin: 20px;
+   visibility: hidden;
+   opacity: 0;
+}
+#spn{
+    font-weight: bold;
+}
+#cd:hover{
+    cursor: pointer;
+}
+#cd:hover #intro{
+    height: 220px;
+    bottom: 10px;
+    background: black;
+
+}
+#cd:hover #p{
+    opacity: 1;
+    visibility: visible;
+}
+#cd:hover #iig{
+    transform: scale(1.1) rotate(3deg);
+}
+#ng{
+    height: 400px;
+    width: 350px;
+}
+#bd{
+    height: 400px;
+    width: 350px; 
+    margin: 50px;
+    box-shadow: 15px 15px 20px black;
+}
+#prrr{
+    display: flex;
+    justify-content: center;
+}
+#ad{
+    height: 300px;
+    width: 350px; 
+    margin: 50px;
+    box-shadow: 15px 15px 20px rgb(232, 240, 197); 
+}
+#corse{
+    display: flex;
+    justify-content: center; 
+}

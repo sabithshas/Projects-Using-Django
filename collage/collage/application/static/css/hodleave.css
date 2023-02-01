@@ -1,0 +1,8 @@
+body,html{overflow-x: hidden;}
+body{
+    background-color: rgb(241, 233, 180);
+}
+/* .container{
+    display: flex;
+    justify-content: center;
+} */

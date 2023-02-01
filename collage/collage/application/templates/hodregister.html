@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../static/css/register.css">
+</head>
+
+<body>
+    <div class="row ">
+        <div class="col-lg-12">
+
+            <nav class="navbar navbar-expand-lg" style="background-color: rgb(5, 107, 138);">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+                        <div class=" ms-auto">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                                <li class="nav-item">
+                                    <a class="nav-link" style="color: rgb(38, 35, 35);" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" style="color: rgb(44, 40, 40);" href="#">Register</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <h1 class="text-center"> Registration</h1>
+                    <form>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label class="label col-md-6 control-label text-danger ">UserName</label>
+                        </div>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control col-md-9" name="name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label class="label col-md-6 control-label text-danger ">Email</label>
+                        </div>
+                        <div class="col-md-9">
+                            <input type="email" class="form-control col-md-9" name="email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label class="label col-md-6 control-label text-danger ">Password</label>
+                        </div>
+                        <div class="col-md-9">
+                            <input type="password" class="form-control col-md-9" name="password">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label class="label col-md-6 control-label text-danger ">Confirm</label>
+                        </div>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control col-md-9" name="Confirm">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                 <label class="label col-md-6 control-label text-danger ">Confirm</label> -->
+    <!-- </div>
+                            <div class="col-md-9">
+                                <button type="submit" class="btn btn-primary mt-4">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                    <div class="col-lg-3"></div>
+
+
+                </div>
+            <!-- </div>   -->
+
+    <form method="post" action="{% url 'dthod' %}">
+        {% csrf_token %}
+        <div class="row mt-3">
+            <div class="col-lg-4 col-md-4 col-sm-4 "></div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">FIRST NAME</label>
+                    <input type="text" class="form-control" name="ftname">
+
+                </div>
+                <div class="mb-3 md-4">
+                    <label for="exampleInputPassword1" class="form-label">LAST NAME</label>
+                    <input type="text" class="form-control" name="ltname">
+                </div>
+                <div class="mb-3 md-4">
+                    <label for="exampleInputPassword1" class="form-label">USERNAME</label>
+                    <input type="text" class="form-control" name="usname">
+                </div>
+                <div class="mb-3 md-4">
+                    <label for="exampleInputPassword1" class="form-label">ADDRESS</label>
+                    <input type="text" class="form-control" name="addrss">
+                </div>
+                <div class="mb-3 md-4">
+                    <label for="exampleInputPassword1" class="form-label">PLACE</label>
+                    <input type="text" class="form-control" name="plce">
+                </div>
+                <div class="mb-3 md-4">
+                    <label for="exampleInputPassword1" class="form-label">PHONE</label>
+                    <input type="text" class="form-control" name="phone">
+                </div>
+                <div class="mb-3 md-4">
+                    <label for="exampleInputPassword1" class="form-label">EMAIL</label>
+                    <input type="text" class="form-control" name="email">
+                </div>
+                <div class="mb-3 md-4">
+                    <label for="exampleInputPassword1" class="form-label">DEPARTMENT</label>
+                    <input type="text" class="form-control" name="department">
+                </div>
+                <div class="mb-3 md-4">
+                    <label for="exampleInputPassword1" class="form-label">QUALIFICATION</label>
+                    <input type="text" class="form-control" name="qualification">
+                </div>
+                <div class="mb-3 md-4">
+                    <label for="exampleInputPassword1" class="form-label">EXPIERENCE</label>
+                    <input type="text" class="form-control" name="experience">
+                </div>
+                <div class="mb-3 md-4">
+                    <label for="exampleInputPassword1" class="form-label">PASSWORD</label>
+                    <input type="password" class="form-control" name="password">
+                </div>
+                <div class="mb-3 md-4">
+                    <label for="exampleInputPassword1" class="form-label">CONFIRM PASSWORD</label>
+                    <input type="password" class="form-control" name="confirmpassword">
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+    <div class="col-lg-4 col-sm-4"></div>
+    </div>
+</body>
+
+</html>

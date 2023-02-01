@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eaman</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../static/css/admin.css">
+</head>
+<body>
+    <div class="container-fluid-xl">
+
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12">
+                <nav class="navbar navbar-expand-lg bg-dark">
+                    <a class="navbar-brand ms-3" href="#">
+                        <img src="../static/images/logo.jpg" alt="Logo" width="70" height="50"
+                            class="d-inline-block align-text-top" class="mb-3">
+                        <span style="color: aliceblue;">HOSPITAL</span>
+                    </a>
+                    <div class="ms-auto me-5">
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="{% url 'doctorreg' %}">Register</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="{% url 'bookingview' %}">Booking List</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="{% url 'leaveview' %}">Requests</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row mt-2" style="background-color: rgb(255, 255, 255);">
+            <div class="col-xl-12 col-lg-12 col-md-12">
+                <h1 class="text-center pt-3" style="color: black;">HOSPITAL DETAILS</h1>
+                <p class="text-center" style="color: rgb(49, 51, 51); font-size: 30px;">Hospitality is the act of kindness in welcoming and looking after the basic needs of customers. The hospitality industry is a broad group of businesses that provide services to customers. The industry can be broken down into three basic areas: accommodations, food and beverage, and travel and tourism. Hospitality is actually one facet of the service industry. It primarily involves addressing customer satisfaction and catering to the needs of guests.<br>
+                    Hospitality management is the study of the Hospitality Industry. Hospitality management provides a focus on the management of hospitality operations including hotels, restaurants, cruise ships, amusement parks, destination marketing organizations, convention centers, country clubs, and other related industries. As a field of work, Hospitality Management refers to the management of hotels, restaurants, resorts, and any other institutions that are involved in the hospitality industry. It also relates to the people who opt for the hospitality sector as a career and pursue their studies in the same.</p>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-xl-12 col-lg-12 col-md-12 ">
+                <h1 class="text-center pt-3" style="color: black;">LIST OF DOCTORS</h1>
+            </div>
+            
+            <div class="col-xl-6 col-lg-6 col-md-6 mt-5" id="doctor">
+                <div class="card" style="width: 30rem;">
+                    <img src="../static/images/doctor1.webp" class="card-img-top" id="doctor" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">JOHN</h5>
+                      <p class="text-center">He was Specialised in <br>Anaesthology</p>
+                    </div>
+                </div>
+            </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 mt-5" id="doctor">
+                    <div class="card" style="width: 30rem;">
+                        <img src="../static/images/doctor2.jpg" class="card-img-top" id="doctor" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">ROCK</h5>
+                          <p class="text-center">He was Specialised in <br>audiology and speech therapy</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 mt-5" id="doctor">
+                        <div class="card" style="width: 30rem;">
+                            <img src="../static/images/doctor3.webp" class="card-img-top" id="doctor" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">TYSON</h5>
+                              <p class="text-center">He was Specialised in <br>arthroscopy and sports injury</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 mt-5" id="doctor">
+                        <div class="card" style="width: 30rem;">
+                            <img src="../static/images/doctor4.png" class="card-img-top" id="doctor" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">ROMIA</h5>
+                              <p class="text-center">She was Specialised in <br>critical care</p>
+                            </div>
+                        </div>
+                    </div>        
+        </div>
+
+
+
+        <div class="row mt-5">
+            <div class="col-xl-12 col-lg-12 col-md-12 ">
+                <h1 class="text-center pt-3" style="color: black;">LIST OF PATIENTS</h1>
+            </div>
+            
+            <div class="col-xl-6 col-lg-6 col-md-6 mt-5" id="doctor">
+                <div class="card" style="width: 30rem;">
+                    <img src="../static/images/patient1.jpg" class="card-img-top" id="doctor" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">sergio</h5>
+                      <p class="text-center">He was under treatment of Anaesthology </p>
+                    </div>
+                </div>
+            </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 mt-5" id="doctor">
+                    <div class="card" style="width: 30rem;">
+                        <img src="../static/images/pattient.jpg" class="card-img-top" id="doctor" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">rey</h5>
+                          <p class="text-center">He was under treatment of audiology and speech therapy  </p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 mt-5" id="doctor">
+                        <div class="card" style="width: 30rem;">
+                            <img src="../static/images/patient3.webp" class="card-img-top" id="doctor" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">shaemus</h5>
+                              <p class="text-center">He was under treatment of arthroscopy and sports injury </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 mt-5" id="doctor">
+                        <div class="card" style="width: 30rem;">
+                            <img src="../static/images/patient2.jpg" class="card-img-top" id="doctor" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">edge</h5>
+                              <p class="text-center">He was under critical care </p>
+                            </div>
+                        </div>
+                    </div>        
+        </div> 
+
+
+        <div class="row mt-4">
+            <div class="col-xl-12 col-lg-12 col-md-12">
+                <footer class=" text-center text-light-start text-light" style="background-color: rgba(19, 19, 19, 0.904);">
+
+                    <div class="container p-4">
+
+                        <div class="row mt-4">
+
+                        </div>
+
+                    </div>
+
+                    <div class="text-center p-3" style="background-color:rgba(17, 17, 16, 0.742)">
+                        © HOSPITAL
+
+                    </div>
+
+                </footer>
+            </div>
+            
+    </div>
+</body>
+</html>

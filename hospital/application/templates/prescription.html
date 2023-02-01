@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../static/css/prescription.css">
+</head>
+
+<body style="background-color: rgba(245, 245, 220, 0.355);">
+    <div class="container-fluid-xl">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-5">
+                <h1 class="text-center" style="color: rgba(8, 8, 8, 0.295); font-style: oblique;">
+                </h1>
+                <form class="mt-5" method="post" action="{% url 'prescription' %}">
+                    {% csrf_token %}
+                    <div class="d-flex justify-content-center mt-4">
+                        <label id="label">Name:</label>
+                        <input type="textbox" id="textbox" name="name">
+                    </div>
+                    <div class="d-flex justify-content-center mt-4">
+                        <label id="label">Age:</label>
+                        <input type="textbox" id="textbox" name="age">
+                    </div>
+                    <div class="d-flex justify-content-center mt-4">
+                        <label id="label">Gender:</label>
+                        <input type="textbox" id="textbox" name="gender">
+                    </div>
+                    <div class="d-flex justify-content-center mt-4">
+                        <label id="label">Date:</label>
+                        <input type="date" id="textbox" name="date">
+                    </div>
+                    <div class="d-flex justify-content-center mt-4">
+                        <label id="label">Diagnosis:</label>
+                        <input type="textbox" id="textbox1" name="diagnosis">
+                    </div>
+                    <div class="d-flex justify-content-center mt-4">
+                        <label id="label">Drug Name:</label>
+                        <input type="textbox" id="textbox1" name="drugname">
+                    </div>
+                    <div class="d-flex justify-content-center mt-4">
+                        <input class="btn btn-success ms-5 mt-4" type="submit" value="Submit" id="button">
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

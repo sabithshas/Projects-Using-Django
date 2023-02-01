@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../static/css/teacherreg.css">
+</head>
+<body>
+        <div class="row ">
+            <div class="col-lg-12">
+    
+                <nav class="navbar navbar-expand-lg" style="background-color: rgb(5, 107, 138);">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+                            <div class=" ms-auto">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                                    <li class="nav-item">
+                                        <a class="nav-link" style="color: rgb(38, 35, 35);" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" style="color: rgb(44, 40, 40);" href="#">Register</a>
+                                    </li>
+    
+                                </ul>
+                            </div>
+    
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+        <form method="post" action="{% url 'addteacher' %}">
+          {% csrf_token %}
+        <div class="row mt-3">
+            <div class="col-lg-4 col-md-4 col-sm-4 "></div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">FIRST NAME</label>
+          <input type="text" class="form-control" name="FNAME">
+        </div>
+        <div class="mb-3 md-4">
+          <label for="exampleInputPassword1" class="form-label">LAST NAME</label>
+          <input type="text" class="form-control" name="LNAME">
+        </div>
+        <div class="mb-3 md-4">
+          <label for="exampleInputPassword1" class="form-label">USERNAME</label>
+          <input type="text" class="form-control" name="UNAME">
+        </div>
+        <div class="mb-3 md-4">
+          <label for="exampleInputPassword1" class="form-label">ADDRESS</label>
+          <input type="text" class="form-control" name="HADDRESS">
+        </div>
+        <div class="mb-3 md-4">
+          <label for="exampleInputPassword1" class="form-label">PLACE</label>
+          <input type="text" class="form-control" name="HPLACE">
+        </div>
+        <div class="mb-3 md-4">
+          <label for="exampleInputPassword1" class="form-label">PHONE</label>
+          <input type="text" class="form-control" name="HPHONE">
+        </div>
+         <div class="mb-3 md-4">
+          <label for="exampleInputPassword1" class="form-label">EMAIL</label>
+          <input type="text" class="form-control" name="HEMAIL">
+        </div>
+         <div class="mb-3 md-4">
+          <label for="exampleInputPassword1" class="form-label">DEPARTMENT</label>
+          <input type="text" class="form-control" name="HDEPARTMENT">
+        </div>
+        <div class="mb-3 md-4">
+            <label for="exampleInputPassword1" class="form-label">SUBJECT</label>
+            <input type="text" class="form-control" name="HSUBJECT">
+          </div>
+         <div class="mb-3 md-4">
+          <label for="exampleInputPassword1" class="form-label">QUALIFICATION</label>
+          <input type="text" class="form-control" name="HQUALIFICATION">
+        </div>
+         <div class="mb-3 md-4">
+          <label for="exampleInputPassword1" class="form-label">EXPIERENCE</label>
+          <input type="text" class="form-control" name="HEXPERIENCE">
+        </div>
+         <div class="mb-3 md-4">
+          <label for="exampleInputPassword1" class="form-label">PASSWORD</label>
+          <input type="password" class="form-control" name="HPASSWORD">
+        </div>
+         <div class="mb-3 md-4">
+          <label for="exampleInputPassword1" class="form-label">CONFIRM PASSWORD</label>
+          <input type="password" class="form-control" name="HCFPASSWORD">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+      <div class="col-lg-4 col-sm-4"></div>
+    </div> 
+</body>
+</html>

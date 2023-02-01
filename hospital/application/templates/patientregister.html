@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>patientRegister</title>
+    <link rel="stylesheet" href="../static/css/patientregister.css">
+</head>
+<body>
+    <div class="container">
+        <form method="post" action="{% url 'addingpatient' %}">
+            {% csrf_token %}
+            <h2>Registration</h2>
+            <div class="content">
+                <div class="input-box">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="fullname">
+                </div>
+                <div class="input-box">
+                    <label for="username">User Name</label>
+                    <input type="text" name="username">
+                </div>
+                <div class="input-box">
+                    <label for="Email">Email</label>
+                    <input type="text" name="email">
+                </div>
+                <div class="input-box">
+                    <label for="phonenumber">Phone Number</label>
+                    <input type="tel" name="phone">
+                </div>
+                <div class="input-box">
+                    <label for="phonenumber">Address</label>
+                    <input type="tel" name="address">
+                </div>
+                <div class="input-box">
+                    <label for="phonenumber">District</label>
+                    <input type="tel" name="district">
+                </div>
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="password" name="password">
+                </div>
+                <div class="input-box">
+                    <label for="cpassword">Confirm Password</label>
+                    <input type="password" name="confirmpassword">
+                </div>
+            </div>
+            <div class="alert">
+                <p>By clicking Sign up You Are agreeing Our Terms And Conditions</p>
+            </div>
+            <div class="button-container">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+body,html{overflow-x: hidden;}
+#ccc{
+    display: flex;
+    justify-content: center;
+}
+#btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

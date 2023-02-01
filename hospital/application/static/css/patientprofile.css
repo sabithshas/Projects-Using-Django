@@ -1,0 +1,11 @@
+body,html{overflow-x: hidden;}
+body{
+    background-color: rgba(8, 6, 6, 0.886);
+}
+.card{
+    color: brown;
+}
+h1{
+    color: rgb(224, 243, 237);
+    font-style: oblique;
+}

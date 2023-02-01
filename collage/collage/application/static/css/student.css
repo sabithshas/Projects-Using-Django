@@ -1,0 +1,51 @@
+body,html{overflow-x: hidden;}
+#cse1{
+    display: flex;
+    justify-content: center; 
+   
+}
+#kg{
+    height: 500px;
+    width: 600px;  
+}
+#xd{
+    height: 500px;
+    width: 600px;
+    margin: 20px; 
+   
+}
+#pros{
+    display: flex;
+    justify-content: center; 
+}
+#td{
+    height: 400px;
+    width: 350px; 
+    margin: 50px;
+    border: solid rgb(14, 14, 13);
+    /* box-shadow: 15px 15px 20px rgb(232, 240, 197);  */
+}
+#rg{
+    height: 400px;
+    width: 350px; 
+}
+#td:hover{
+    cursor: pointer;
+}
+#td:hover{
+    box-shadow: 15px 15px 20px rgb(8, 8, 8); 
+}
+#hod{
+    display: flex;
+    justify-content: center;
+}
+#mg{
+    height: 400px;
+    width: 350px;
+}
+#rd{
+    height: 400px;
+    width: 350px; 
+    margin: 50px;
+    
+}

@@ -1,0 +1,12 @@
+body,html{overflow-x: hidden;}
+body{
+    background-color: rgb(242, 242, 246);
+}
+.card{
+    background-color: rgb(173, 79, 24);
+}
+#ccc{
+    display: flex;
+    justify-content: center;
+}
+
